@@ -1,0 +1,16 @@
+p{
+    font-family: Arial, "Hevelvetica Neue", Helvetica, sans-serif; //шрифт
+    font-size: 25px;
+    font-style: oblique; //курсив, наклонный
+    font-weight: 800; //вес шрифта, жирность
+    color: #999;
+    text-align: start; //выравнивание текста, позиционирование
+    text-decoration: underline; //зачёркивания, подчёркивания
+    text-shadow: 1px 1px 1px #000; //смещение по вертикали, по горизонтали, размытость, цвет тени
+    text-transform: uppercase; //транформация, например, все буквы заглавные
+    text-indent: 30px; //красная строка, отступ
+    letter-spacing: 5px; //интервал между символами
+    line-height: 50px; //высота строки
+    white-space: normal;//правило переноса текста
+    word-spacing: 10px; //интервал между словами
+}
