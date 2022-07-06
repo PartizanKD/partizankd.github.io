@@ -10,192 +10,189 @@
     <meta property="og:title" content="Это моя первая страница...">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
 
     <title>Дмитрий Кашин - Веб-разработчик</title>
 </head>
 
 <body>
-
     <header>
-
+      <div class="prelbg"><div class="preloader-5"></div></div>
         <nav>
             <div class="logo">Дмитрий Кашин</div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </nav>
 
     </header>
+    
+    
 
-    <div class="main">
-        <div class="title__container">
-            <h1>Привет <br> Я Дмитрий Кашин</h1>
-            <h4>Фулл стек веб-разработчик</h4>
-            <form action="#">
-                <input type="submit" value="Обо мне">
-                <input type="submit" value="Мои работы">
-            </form>
-        </div>
-    </div>
-
-    <div class="about_me">
-        <h2>ОБО МНЕ</h2>
-        <img src="img/line.png" alt="Черта заголовка"><br>
-        <img class="wings" src="img/wings.png" alt="Картинка Крылья свободы">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veniam incidunt quo ut architecto reiciendis repudiandae asperiores laborum quis sequi.</p><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consequatur ad nemo dolore, voluptatem odio, rerum ullam dignissimos dicta ut.</p>
-        <form action="#">
-            <input type="submit" value="Скачать резюме">
-        </form>
-    </div>
-
-
-    <div class="ICan">
-        <h2>ЧТО Я УМЕЮ</h2>
-        <img src="img/line.png" alt="Черта заголовка">
-        <ul>
-            <li class="c1">
-                <h5>Веб-дизайн</h5><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
-            </li>
-            <li class="c2">
-                <h5>Разработка</h5><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
-            </li>
-            <li class="c3">
-                <h5>СЕО-Оптимизация</h5><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
-            </li>
-            <li class="c4">
-                <h5>Маркетинг</h5><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
-            </li>
-        </ul>
-    </div>
-
-    <div class="case">
-        <h2>КЕЙСЫ</h2>
-        <img src="img/line.png" alt="Черта заголовка">
-        <p class="case_text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est molestiae inventore, odio, suscipit sunt possimus.</p>
-        <div class="center">
-            <div class="left">
-                <h3>CLIENT:</h3>
-                <p>какая-то компания</p>
-                <h3>WEBSITE:</h3>
-                <p>https://vk.com/id187789345</p>
+    <main>
+        <section class="main">
+            <div class="title__container">
+                <h1>Привет <br> Я Дмитрий Кашин</h1>
+                <h4>Фулл стек веб-разработчик</h4>
                 <form action="#">
-                    <input type="submit" value="VISIT LIVE SITE">
+                    <input type="button" value="Обо мне">
+                    <input type="button" value="Мои работы">
                 </form>
             </div>
-            <div class="right">
-                <h3>Название проекта</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nobis at modi, assumenda laboriosam quis doloremque? Aliquid recusandae, non accusantium commodi similique dolores architecto qui ex libero debitis, sit molestiae vitae at velit ea suscipit optio veritatis magni unde molestias.</p>
-            </div>
+        </section>
+
+        <div class="about_me">
+            <h2>ОБО МНЕ</h2>
+            <img class="wings" src="img/wings.png" alt="Картинка Крылья свободы">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veniam incidunt quo ut architecto reiciendis repudiandae asperiores laborum quis sequi.</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consequatur ad nemo dolore, voluptatem odio, rerum ullam dignissimos dicta ut.</p>
+            <form action="#">
+                <input type="submit" value="Скачать резюме">
+            </form>
         </div>
 
-    </div>
 
-    <div class="price">
-        <h2>Расчет стоимости</h2>
-        <h3>ТИП САЙТА</h3>
-        <form action="#">
-            <select name="list1" id="list">
-                <option value="Opt1">Выберите пункт...</option>
-                <option value="Opt2">Option 1</option>
-                <option value="Opt3">Option 2</option>
-                <option value="Opt4">Option 3</option>
-            </select>
-            <h3>ДИЗАЙН</h3>
-            <select name="list1" id="list">
-                <option value="Opt5">Выберите пункт...</option>
-                <option value="Opt6">Option 1</option>
-                <option value="Opt7">Option 2</option>
-                <option value="Opt8">Option 3</option>
-            </select>
-            <h3>АДАПТИВНОСТЬ</h3>
-            <select name="list1" id="list">
-                <option value="Opt9">Выберите пункт...</option>
-                <option value="Opt10">Option 1</option>
-                <option value="Opt11">Option 2</option>
-                <option value="Opt12">Option 3</option>
-            </select>
-        </form>
-        <p>Сроки 0 <br>Стоимость 0</p>
-    </div>
+        <div class="ICan">
+            <h2>ЧТО Я УМЕЮ</h2>
+            <ul>
+                <li class="c1">
+                    <h5>Веб-дизайн</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
+                </li>
+                <li class="c2">
+                    <h5>Разработка</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
+                </li>
+                <li class="c3">
+                    <h5>СЕО-Оптимизация</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
+                </li>
+                <li class="c4">
+                    <h5>Маркетинг</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
+                </li>
+            </ul>
+        </div>
 
-    <div class="stat">
-        <h2>НЕМНОГО СТАТИСТИКИ</h2>
-        <img src="img/line.png" alt="Черта заголовка">
-        <ul>
-            <li class="c5">
-                <p class="number">120</p>
-                <p class="text">счастливых клиентов</p>
-            </li>
+        <div class="case">
+            <h2>КЕЙСЫ</h2>
+            <p class="case_text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est molestiae inventore, odio, suscipit sunt possimus.</p>
+            <div class="center">
+                <div class="left">
+                    <h3>CLIENT:</h3>
+                    <p>какая-то компания</p>
+                    <h3>WEBSITE:</h3>
+                    <p>https://vk.com/id187789345</p>
+                    <form action="#">
+                        <input type="submit" value="VISIT LIVE SITE">
+                    </form>
+                </div>
+                <div class="right">
+                    <h3>Название проекта</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nobis at modi, assumenda laboriosam quis doloremque? Aliquid recusandae, non accusantium commodi similique dolores architecto qui ex libero debitis, sit molestiae vitae at velit ea suscipit optio veritatis magni unde molestias.</p>
+                </div>
+            </div>
 
-            <li class="c6">
-                <p class="number">4600</p>
-                <p class="text">часов работы</p>
-            </li>
+        </div>
 
-            <li class="c7">
-                <p class="number">340</p>
-                <p class="text">проектов завершено</p>
-            </li>
+        <div class="price">
+            <h2>Расчет стоимости</h2>
+            <h3>ТИП САЙТА</h3>
+            <form action="#">
+                <select name="list1" id="list">
+                    <option value="Opt1">Выберите пункт...</option>
+                    <option value="Opt2">Option 1</option>
+                    <option value="Opt3">Option 2</option>
+                    <option value="Opt4">Option 3</option>
+                </select>
+                <h3>ДИЗАЙН</h3>
+                <select name="list1" id="list">
+                    <option value="Opt5">Выберите пункт...</option>
+                    <option value="Opt6">Option 1</option>
+                    <option value="Opt7">Option 2</option>
+                    <option value="Opt8">Option 3</option>
+                </select>
+                <h3>АДАПТИВНОСТЬ</h3>
+                <select name="list1" id="list">
+                    <option value="Opt9">Выберите пункт...</option>
+                    <option value="Opt10">Option 1</option>
+                    <option value="Opt11">Option 2</option>
+                    <option value="Opt12">Option 3</option>
+                </select>
+            </form>
+            <p>Сроки 0 <br>Стоимость 0</p>
+        </div>
 
-            <li class="c8">
-                <p class="number">23</p>
-                <p class="text">наград получено</p>
-            </li>
-        </ul>
-    </div>
+        <div class="stat">
+            <h2>НЕМНОГО СТАТИСТИКИ</h2>
+            <ul>
+                <li class="c5">
+                    <p class="number">120</p>
+                    <p class="text">счастливых клиентов</p>
+                </li>
 
-    <div class="people_about_me">
-        <h2>ОТЗЫВЫ</h2>
-        <img src="img/line.png" alt="Черта заголовка"><br><br>
-        <img src="img/photo2.png" alt="Ген директор Михаил">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aperiam sapiente esse aspernatur corporis,<br> optio in sunt ratione eveniet, earum nemo explicabo impedit, quia provident!</p>
-        <p>Михаил, Ген директор ПАО "Газпром".</p>
-        <form action="#">
-            <input type="radio" name="text_input1" value="1">
-            <input type="radio" name="text_input1" value="2">
-            <input type="radio" name="text_input1" value="3">
-        </form>
-    </div>
+                <li class="c6">
+                    <p class="number">4600</p>
+                    <p class="text">часов работы</p>
+                </li>
 
-    <div class="contact">
-        <h2>МОИ КОНТАКТЫ</h2>
-        <img src="img/line.png" alt="Черта заголовка">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum atque labore voluptatibus, eum recusandae eos?</p>
-        <ul>
-            <li class="c9">
-               <p>Санкт-Петербург<br>Невский проспект 11</p>
-            </li>
+                <li class="c7">
+                    <p class="number">340</p>
+                    <p class="text">проектов завершено</p>
+                </li>
 
-            <li class="c10">
-                <p>info@companyname.com</p>
-            </li>
+                <li class="c8">
+                    <p class="number">23</p>
+                    <p class="text">наград получено</p>
+                </li>
+            </ul>
+        </div>
 
-            <li class="c11">
-                <p>+7 999 999-99-99</p>
-            </li>
-        </ul>
-        
-        <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-        <form action="#">
-            <input type="text" name="text_input" placeholder="Имя">
-            <input type="text" name="text_input" placeholder="Email"><br>
-            <textarea name="name1" id="1" cols="44" rows="10" placeholder="Сообщение"></textarea><br>
-            <input id="submit" type="submit" value="Отправить">
-        </form>
-    </div>
+        <div class="people_about_me">
+            <h2>ОТЗЫВЫ</h2>
+            <img src="img/photo2.png" alt="Ген директор Михаил">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil aperiam sapiente esse aspernatur corporis,<br> optio in sunt ratione eveniet, earum nemo explicabo impedit, quia provident!</p>
+            <p>Михаил, Ген директор ПАО "Газпром".</p>
+            <form action="#">
+                <input type="radio" name="text_input1" value="1">
+                <input type="radio" name="text_input1" value="2">
+                <input type="radio" name="text_input1" value="3">
+            </form>
+        </div>
 
+        <div class="contact">
+            <h2>МОИ КОНТАКТЫ</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum atque labore voluptatibus, eum recusandae eos?</p>
+            <ul>
+                <li class="c9">
+                    <p>Санкт-Петербург<br>Невский проспект 11</p>
+                </li>
+
+                <li class="c10">
+                    <p>info@companyname.com</p>
+                </li>
+
+                <li class="c11">
+                    <p>+7 999 999-99-99</p>
+                </li>
+            </ul>
+
+            <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+            <form action="#">
+                <input type="text" name="text_input" placeholder="Имя">
+                <input type="text" name="text_input" placeholder="Email"><br>
+                <textarea name="name1" id="1" cols="44" rows="10" placeholder="Сообщение"></textarea><br>
+                <input id="submit" type="button" value="Отправить">
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>

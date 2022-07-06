@@ -122,3 +122,271 @@ p{
     padding: 0px 16px;
     margin: 50px 28px 0px 14px;
 }
+
+/*------------------------------------------------------------------------- Lesson 5 ---------------------------------------------------------*/
+body{
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.main_block {
+    border: 2px solid red;
+    max-width: 800px;
+    height: 800px;
+    margin: 0 auto; /*выравнивание блочного элемента по центру, сверху-снизу 0, справа-слева авто*/
+    /*position: relative;/*точка отсчёта для блоков будет начинаться не с начала страницы, а с начала блока .main_block*/
+    
+}
+
+.main_block div{
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.block_1{
+    background-color: antiquewhite;
+}
+
+.block_2{
+    background-color: coral;
+    position: static; /*значение по умолчанию*/
+    
+    position: relative; /*точка отсчёта*/
+    left: 20px;
+    top: 20px;
+    z-index: 1; /*ось z, порядок наложения слоёв, по умолчанию 0, работает с relative и absolute*/
+    
+    position: absolute; /*точка отсчёта с начала страницы, если не задать в родительском элементе position: relative*/
+    left: 0px;
+    top: 0px;
+    width: 30%;
+    
+    position: fixed; /*фиксирует положение блока на экране пользователя*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    position: sticky;/*"липкий", гибрид между значениями fixed и static*/
+}
+
+.block_3{
+    background-color: lightgreen;
+    position: relative;
+}
+
+.main_block div{
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 33%;
+    
+}
+
+.block_1{
+    background-color: antiquewhite;
+}
+
+.block_2{
+    background-color: coral;
+}
+
+.block_3{
+    background-color: lightgreen;
+}
+
+/*------------------------------------------------------------------------- Lesson 6 ---------------------------------------------------------*/
+
+a{
+    color: blue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+a:active{/*превдокласс*/
+    color: aqua;
+}
+
+a:hover{
+    background: green;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+}
+
+.box:hover{ 
+    background: red;
+    width: 300px;
+}
+
+a:visited{
+    color: firebrick;
+}
+
+input:focus{
+    border: 3px solid green;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+}
+
+/*li:first-child{
+    background: red;
+}
+
+li:nth-child(3){ /*even - каждый чётный, odd/2n+1 - каждый нечётный, 2n - каждый второй*/
+  /*  background: red;
+}*/
+
+p::first-line{/*превдоэлемент*/
+    color: aquamarine;
+}
+
+p::first-letter{/*превдоэлемент*/
+    color: red;
+    font-size: 20px;
+}
+
+ul{
+    margin: 50px;
+    font-size: 18px;
+    width: 30px;
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+li::after{/*после*/
+    content: "";
+}
+
+li::before{ /*До*/
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 10px;
+}
+
+li::before{ 
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: red;
+    transition: all 0.3s;
+}
+
+li:hover::before{
+    transform: scaleX(1);
+   
+}
+
+/*------------------------------------------------------------------------- Lesson 6 animation ---------------------------------------------------------*/
+
+body{
+    padding: 50px;
+}
+
+.box span{
+    display: block;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: azure;
+    transition: all 2s 0.1s cubic-bezier(.03,.97,.91,.05);
+    /*transition-duration: 2s; /*задаёт время анимации, за которое покрасится блок*/
+    /*transition-property: all; /*перечисляем, какие параметры мы хотим анимировать*/
+    /*transition-delay: 0.1s; /*задержка перед изменением*/
+    /*transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(.03,.97,.91,.05);*/
+}
+
+.box:active{
+    /*background-color: red;
+    width: 300px;
+    opacity: 0;*/
+    margin-left: 300px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: azure;
+    animation-name: move;
+    animation-duration: 5s;
+    /*animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite; /*кол-вл повторений, infinite - бесконечно */
+    /*animation-direction: reverse; /*reverse - в обратном порядке, alternate - туда и обратно*/
+    /*animation-direction: alternate;*/
+    /*animation-fill-mode: forwards; остановится на финише*/
+    animation: move 1s ease reverse infinite, bg-color 2s;
+}
+
+@keyframes move{
+    0%{ /* =from*/
+        margin-left: 0;
+    }
+    
+    100%{ /* =to*/
+        margin-left: 200px;
+    }
+}
+
+@keyframes bg-color{
+    0%{ /* =from*/
+        background: red;
+    }
+    
+    100%{ /* =to*/
+        background: #fff;
+    }
+}
+
+.box:hover{
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
