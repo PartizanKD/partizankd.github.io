@@ -8,44 +8,78 @@
     <meta name="robots" content="noindex, nofollow">
 
     <meta property="og:title" content="Это моя первая страница...">
+    <title>Дмитрий Кашин - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/preloader.css">
 
-    <title>Дмитрий Кашин - Веб-разработчик</title>
 </head>
 
 <body>
     <header>
-      <div class="prelbg"><div class="preloader-5"></div></div>
+        <div class="prelbg">
+            <div class="preloader-5"></div>
+        </div>
         <nav>
-            <div class="logo">Дмитрий Кашин</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-7">
+                        <div class="logo">Дмитрий Кашин</div>
+                    </div>
+                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-3 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Навигация
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </nav>
 
     </header>
-    
-    
 
     <main>
         <section class="main">
-            <div class="title__container">
-                <h1>Привет <br> Я Дмитрий Кашин</h1>
-                <h4>Фулл стек веб-разработчик</h4>
-                <form action="#">
-                    <input type="button" value="Обо мне">
-                    <input type="button" value="Мои работы">
-                </form>
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 mt-5 pt-5">
+                        <div class="title__container mt-5">
+                            <h1>Привет <br> Я Дмитрий Кашин</h1>
+                            <h4><i class="fa fa-css3 custom-css3" aria-hidden="true"></i>Фулл стек веб-разработчик</h4>
+                            <form action="#">
+                                <input type="button" value="Обо мне">
+                                <input type="button" value="Мои работы">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
 
         <div class="about_me">
@@ -59,47 +93,54 @@
         </div>
 
 
-        <div class="ICan">
-            <h2>ЧТО Я УМЕЮ</h2>
-            <ul>
-                <li class="c1">
-                    <h5>Веб-дизайн</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
-                </li>
-                <li class="c2">
-                    <h5>Разработка</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
-                </li>
-                <li class="c3">
-                    <h5>СЕО-Оптимизация</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
-                </li>
-                <li class="c4">
-                    <h5>Маркетинг</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="case">
-            <h2>КЕЙСЫ</h2>
-            <p class="case_text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est molestiae inventore, odio, suscipit sunt possimus.</p>
-            <div class="center">
-                <div class="left">
-                    <h3>CLIENT:</h3>
-                    <p>какая-то компания</p>
-                    <h3>WEBSITE:</h3>
-                    <p>https://vk.com/id187789345</p>
-                    <form action="#">
-                        <input type="submit" value="VISIT LIVE SITE">
-                    </form>
-                </div>
-                <div class="right">
-                    <h3>Название проекта</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nobis at modi, assumenda laboriosam quis doloremque? Aliquid recusandae, non accusantium commodi similique dolores architecto qui ex libero debitis, sit molestiae vitae at velit ea suscipit optio veritatis magni unde molestias.</p>
+        <div class="container-fluid">
+            <div class="ICan d-flex">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <h2>ЧТО Я УМЕЮ</h2>
+                        <div class="c1 col-3">
+                            <h5>Веб-дизайн</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
+                        </div>
+                        <div class="c2 col-3">
+                            <h5>Разработка</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
+                        </div>
+                        <div class="c3 col-3">
+                            <h5>СЕО-Оптимизация</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
+                        </div>
+                        <div class="c4 col-3">
+                            <h5>Маркетинг</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos, error harum dolore at adipisci!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
+        <div class="container">
+            <div class="case">
+                <h2>КЕЙСЫ</h2>
+                <p class="case_text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est molestiae inventore, odio, suscipit sunt possimus.</p>
+                <div class="center d-flex">
+                    <div class="row">
+                        <div class="left col-3">
+                            <h3>CLIENT:</h3>
+                            <p>какая-то компания</p>
+                            <h3>WEBSITE:</h3>
+                            <p>https://vk.com/id187789345</p>
+                            <form action="#">
+                                <input type="submit" value="VISIT LIVE SITE">
+                            </form>
+                        </div>
+                        <div class="right col-9">
+                            <h3>Название проекта</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nobis at modi, assumenda laboriosam quis doloremque? Aliquid recusandae, non accusantium commodi similique dolores architecto qui ex libero debitis, sit molestiae vitae at velit ea suscipit optio veritatis magni unde molestias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="price">
@@ -130,29 +171,30 @@
             <p>Сроки 0 <br>Стоимость 0</p>
         </div>
 
-        <div class="stat">
-            <h2>НЕМНОГО СТАТИСТИКИ</h2>
-            <ul>
-                <li class="c5">
-                    <p class="number">120</p>
-                    <p class="text">счастливых клиентов</p>
-                </li>
-
-                <li class="c6">
-                    <p class="number">4600</p>
-                    <p class="text">часов работы</p>
-                </li>
-
-                <li class="c7">
-                    <p class="number">340</p>
-                    <p class="text">проектов завершено</p>
-                </li>
-
-                <li class="c8">
-                    <p class="number">23</p>
-                    <p class="text">наград получено</p>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <div class="stat d-flex">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <h2>НЕМНОГО СТАТИСТИКИ</h2>
+                        <div class="c5 col-3">
+                            <p class="number">120</p>
+                            <p class="text">счастливых клиентов</p>
+                        </div>
+                        <div class="c6 col-3">
+                            <p class="number">4600</p>
+                            <p class="text">часов работы</p>
+                        </div>
+                        <div class="c7 col-3">
+                            <p class="number">340</p>
+                            <p class="text">проектов завершено</p>
+                        </div>
+                        <div class="c8 col-3">
+                            <p class="number">23</p>
+                            <p class="text">наград получено</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="people_about_me">
@@ -167,32 +209,33 @@
             </form>
         </div>
 
-        <div class="contact">
-            <h2>МОИ КОНТАКТЫ</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum atque labore voluptatibus, eum recusandae eos?</p>
-            <ul>
-                <li class="c9">
-                    <p>Санкт-Петербург<br>Невский проспект 11</p>
-                </li>
-
-                <li class="c10">
-                    <p>info@companyname.com</p>
-                </li>
-
-                <li class="c11">
-                    <p>+7 999 999-99-99</p>
-                </li>
-            </ul>
-
-            <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-            <form action="#">
-                <input type="text" name="text_input" placeholder="Имя">
-                <input type="text" name="text_input" placeholder="Email"><br>
-                <textarea name="name1" id="1" cols="44" rows="10" placeholder="Сообщение"></textarea><br>
-                <input id="submit" type="button" value="Отправить">
-            </form>
+        <div class="container-fluid">
+            <div class="contact d-flex">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <h2>МОИ КОНТАКТЫ</h2>
+                        <div class="c9 col-4">
+                            <p>Санкт-Петербург<br>Невский проспект 11</p>
+                        </div>
+                        <div class="c10 col-4">
+                            <p>info@companyname.com</p>
+                        </div>
+                        <div class="c11 col-4">
+                            <p>+7 999 999-99-99</p>
+                        </div>
+                        <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
+                        <form action="#">
+                            <input type="text" name="text_input" placeholder="Имя">
+                            <input type="text" name="text_input" placeholder="Email"><br>
+                            <textarea name="name1" id="1" cols="44" rows="10" placeholder="Сообщение"></textarea><br>
+                            <input id="submit" type="button" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
