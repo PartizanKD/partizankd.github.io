@@ -1,49 +1,5 @@
 "use strict"
 
-/*let type1 = 500,
-    type2 = 1000,
-    type3 = 1500,
-    design1 = 1000,
-    design2 = 2000,
-    design3 = 3000,
-    adaptivity1 = 300,
-    adaptivity2 = 600,
-    adaptivity3 = 900,
-    sum1, sum2, sum3, sum;
-
-sum1 = prompt("Тип: Введите 1, 2 или 3", "");
-if (sum1 == 1) {
-    sum1 = type1;
-} else if (sum1 == 2) {
-    sum1 = type2;
-} else if (sum1 == 3) {
-    sum1 = type3;
-}
-alert(`Ваша цена за тип сайта ${sum1} руб`);
-
-sum2 = prompt("Дизайн: Введите 1, 2 или 3", "");
-if (sum2 == 1) {
-    sum2 = design1;
-} else if (sum2 == 2) {
-    sum2 = design2;
-} else if (sum2 == 3) {
-    sum2 = design3;
-}
-alert(`Ваша цена за дизайн сайта ${sum2} руб`);
-
-sum3 = prompt("Адаптивность: Введите 1, 2 или 3", "");
-if (sum3 == 1) {
-    sum3 = adaptivity1;
-} else if (sum3 == 2) {
-    sum3 = adaptivity2;
-} else if (sum3 == 3) {
-    sum3 = adaptivity3;
-}
-alert(`Ваша цена за адаптивность сайта ${sum3} руб`);
-
-sum = sum1 + sum2 + sum3;
-alert(`Итоговая цена тип ${sum1} + дизайн ${sum2} + адаптивность ${sum3} = ${sum} руб`);*/
-
 let sum1;
 let sum = [];
 let matrix = [
@@ -68,7 +24,7 @@ function js() {
     } else if (sum1 == 3) {
         sum.push(matrix[0][2]);
         sum.push(time[0][2]);
-    } 
+    }
     alert(`Ваша цена за тип сайта ${sum[0]} руб \n Сроки (в днях): ${sum[1]}`);
 
     sum1 = prompt(`Выберите дизайн сайта.\n 1 - По шаблону ${matrix[1][0]} руб\n 2 - Анимированный ${matrix[1][1]} руб\n 3 - Уникальный ${matrix[1][2]} руб\n`, ``);
