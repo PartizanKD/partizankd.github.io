@@ -317,7 +317,51 @@ console.log(arr);
 arr.splice(1,1);//удаляет объекты позиция + кол-во элементов
 console.log(arr);
 
+//Lesson11 часть 1----------------------------------------------------------------------------------------------------------
 
+let windowWidth = window.innerWidth; //получаем ширину окна нашего браузера
+console.log(windowWidth);
+
+windowWidth = navigator.userAgent; //получаем инфу о браузере пользователя
+console.log(windowWidth);
+
+windowWidth = location.href; //текущий путь до сайта
+//location.href = "http://yandex.ru";//перенаправление на другой сайт
+
+console.log(windowWidth);
+
+$(document).ready(function () { //запускает код после загрузки страницы
+    //$('#hello.he').text("Привет, Димас");
+    $('.he+p').css("border", '2px solid red');
+    $('#hello').css("border", '2px solid red');
+    $('.he+p').dblclick(function(){
+        alert("Its work");
+    });
+    $('.he+p').click(function(){
+        $(this).toggleClass("red");
+    });
+ $('.he+p').mouseenter(function(){
+        $(this).toggleClass("red");
+    });
+    $('.he+p').mouseleave(function(){
+        $(this).toggleClass("red");
+    });
+    $('input').focus(function(){
+        console.log("focus");
+    });
+    $('input').change(function(){//keyup
+       $('.he').text("Привет, "+ $(this).val());
+    });
+    
+    $('p').dblclick(function(){
+       $(this).delay(2000).hide(5000).delay(500).show(2000);
+    });
+    
+    $('p').click(function(){
+       $(this).animate({opacity: '0.2'}, 1000);
+    });
+});
+//$('#hello').text("Привет, Димас");
 
 
 
