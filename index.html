@@ -54,6 +54,37 @@
           </ol>            
         </li>
       </ol>
+    
+    <ol>
+        <li>Item
+            <ol>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+        </li>
+        <li>Item
+            <ol>
+                <li> Item</li>
+            </ol>
+        </li>
+    </ol>
+    <style>
+        ol {
+            counter-reset: item
+        }
+
+        li {
+            display: block
+        }
+
+        li:before {
+            content: counters(item, ".") " ";
+            counter-increment: item
+        }
+
+    </style>
 </body>
 
 </html>
