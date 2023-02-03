@@ -1,90 +1,49 @@
-Например,
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <p>Блочными элементами называют те, которые отображаются как прямоугольник, они занимают всю доступную ширину и их высота определяется содержимым. </p>
-    <p>Параграф 1</p>
-    <p>Параграф 2</p>
-    <p>Параграф 3</p>
-
-    <h1>Заголовок 1 уровня</h1>
-    <h2>Заголовок 2 уровня</h2>
-    .....................................
-    <h6>Заголовок 6 уровня</h6>
-
-    <span>Строчными элементами называют те, которые раскладываются друг за другом в строки и переносятся на следующие строки, когда не хватает ширины.</span>
-    <span>Текст 1</span>
-    <span>Текст 2</span>
-    <span>Текст 3</span>
-
-    <a href="#">Ссылка 1</a>
-    <a href="https://ya.ru/">Ссылка 2</a>
-    <a href="https://www.youtube.com/">Ссылка 3</a>
-
-    <ol>
-        <li><a href="https://www.culture.ru/poems/33954/tak-budet">Так будет</a></li>
-        <li><a href="https://www.culture.ru/poems/36102/mne-nravitsya-chto-vy-bolny-ne-mnoi">Мне нравится, что вы больны не мной</a></li>
-        <li>
-            <ol>
-                <li><a href="https://www.culture.ru/poems/33954/tak-budet">Так будет</a></li>
-                <li><a href="https://www.culture.ru/poems/36102/mne-nravitsya-chto-vy-bolny-ne-mnoi">Мне нравится, что вы больны не мной</a></li>
-                <li><a href="https://www.culture.ru/poems/33921/rekviem">Реквием</a></li>
-            </ol>
-        </li>
-    </ol>
-    
-     <ol style="list-style: none">
-        <li><span>1</span> Item
-          <ol style="list-style: none">
-            <li><span>1.1</span> Item</li>
-            <li><span>1.2</span> Item</li>
-            <li><span>1.3</span> Item</li>
-            <li><span>1.4</span> Item</li>
-          </ol>
-        </li>            
-        <li><span>2</span> Item
-          <ol style="list-style: none">
-            <li><span>2.1</span> Item</li>
-          </ol>            
-        </li>
-      </ol>
-    
-    <ol>
-        <li>Item
-            <ol>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-            </ol>
-        </li>
-        <li>Item
-            <ol>
-                <li> Item</li>
-            </ol>
-        </li>
-    </ol>
-    <style>
-        ol {
-            counter-reset: item
-        }
-
-        li {
-            display: block
-        }
-
-        li:before {
-            content: counters(item, ".") " ";
-            counter-increment: item
-        }
-
-    </style>
+    <header>
+        <div class="logo">Логотип</div>
+        <div class="text-logo">Текст около логотипа</div>
+        <div class="number">номер телефона</div>
+        <button class="button">кнопка</button>
+    </header>
+    <main>
+        <section>
+           <h1>Вакансия: комплектатор интерьера</h1>
+            <div>работа с лучшими условиями</div>
+            <div>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+            </div>
+            <button>Узнайте прямо сейчас актуальные вакансии </button>
+            <button>Кнопка </button>
+        </section>
+        <section>
+            <h2>Заголовок</h2>
+            <h4>Текст под заголовком</h4>
+            <div>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+            </div>
+            <p>Мы все понимаем,вы не хотите работать,но рабы должны работать,что бы выжить</p>
+        </section>
+    </main>
 </body>
+<footer> Заполним когда дойдём до самого низа,но это не точно </footer>
 
 </html>
