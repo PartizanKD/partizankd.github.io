@@ -1,0 +1,13 @@
+.logo,
+.text-logo,
+.number,
+.button {
+    padding: 40px;
+    margin: 40px;
+    border: 1px solid black;
+    float: left;
+}
+
+.button {
+    float: none;
+}
